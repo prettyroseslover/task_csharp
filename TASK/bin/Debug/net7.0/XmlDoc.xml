@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TASK</name>
+    </assembly>
+    <members>
+        <member name="M:TASK.Controllers.FileController.PostFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Загрузка необходимого csv-файла
+            </summary>
+            <remarks>  csv с каждой строкой в формате: {Дата и время в формате ГГГГ-ММ-ДД_чч-мм-сс};{Целочисленное значение времени в секундах};{Показатель в виде числа с плавающей запятой} </remarks>
+        </member>
+        <member name="M:TASK.Controllers.FileController.GetResult(System.String,System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})">
+            <summary>
+            Возвращает значения из таблицы Results по заданным параметрам
+            </summary>
+            <remarks> Требования к параметрам: &#13;&#10;
+            filenameCSV - имя файла + расширение (filename.csv)&#13;&#10;
+            Время запуска первой операции от timeFrom до timeTo&#13;&#10;
+            Средний показатель в диапозоне от avgFrom до avgTo&#13;&#10;
+            Среднее время в диапозоне от avgTimeFrom до avgTimeTo </remarks>
+        </member>
+        <member name="M:TASK.Controllers.FileController.GetValuesByName(System.String)">
+            <summary>
+            Возвращает значения из таблицы Values по имени файла
+            </summary>
+            <remarks>Имя файла вводить в формате filename.csv</remarks>
+        </member>
+        <member name="T:TASK.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:TASK.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TASK.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:TASK.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
